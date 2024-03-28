@@ -1,4 +1,5 @@
 guests = ['Margot', 'Rosamund', 'Tom', 'Paul']
+print(len(guests))
 
 print(f'Hi {guests[0]}, I am waiting for you.')
 print(f'{guests[1]}, dinner is ready!')
