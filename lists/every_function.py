@@ -44,3 +44,5 @@ print(f'\n{countries}')
 
 # organizar temporariamente a lista em ordem alfabética
 print(f'\n{sorted(countries)}')
+
+print(f'{len(countries)}')
