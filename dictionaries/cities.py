@@ -16,6 +16,8 @@ cities = {
         'fact': '"paris" is not the original name of the city'
     },
 }
+# adicionar novo key-value em um dict dentro de outro dict
+cities['porto']['another fact'] = 'this is my home'
 
 for city, info in cities.items():
     print(f'\nThree things about {city.title()}:')
