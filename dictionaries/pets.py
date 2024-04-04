@@ -6,7 +6,7 @@ pet = {
     'owner': 'vanessa',
     'weight': 4.5,
     'eats': 'fish',
-}
+    }
 pets.append(pet)
 
 pet = {
@@ -14,7 +14,7 @@ pet = {
     'owner': 'léa',
     'weight': 4.1,
     'eats': 'chicken',
-}
+    }
 pets.append(pet)
 
 pet = {
