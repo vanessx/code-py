@@ -1,3 +1,4 @@
+# lista dentro de um dicionário
 favorite_places = {
     'nathalie': ['porto', 'rome', 'paris'],
     'margot': ['madeira', 'toscana', 'stockholm'],
