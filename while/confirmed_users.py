@@ -2,7 +2,7 @@ unconfirmed_users = ['léa', 'paul', 'margot']
 confirmed_users = []
 
 while unconfirmed_users: # será executado o loop atá a lista estar vazia
-    current_user = unconfirmed_users.pop() # remove o item da lista e atribui-o a uma variável
+    current_user = unconfirmed_users.pop() # remove o último item da lista e atribui-o a uma variável
     print(f'Verifying user: {current_user.title()}.')
     confirmed_users.append(current_user) # adiciona à lista dos confirmados
 
