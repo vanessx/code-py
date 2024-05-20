@@ -31,7 +31,6 @@ print(f'This user attempted to login {user1.login_attempts} times.')
 user1.reset_login_attempts()
 print(f'This user deleted all the attempts. Number of attempts: {user1.login_attempts}.')
 
-
 print()
 
 user2 = User('margot', 'robbie', 33, 'female', 'los angeles')
