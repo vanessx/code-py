@@ -5,6 +5,7 @@ class User:
         self.age = age
         self.gender = gender
         self.location = location
+        self.login_attempts = 0
     
     def describe_user(self):
         print(f'Your name is {self.first_name.title()} {self.last_name.title()}'
@@ -14,9 +15,22 @@ class User:
     def greet_user(self):
         print(f'Hello, {self.first_name.title()} {self.last_name.title()}!')
 
+    def increment_login_attempts(self):
+        self.login_attempts += 1
+    
+    def reset_login_attempts(self):
+        self.login_attempts = 0
+
 user1 = User('léa', 'seydoux', 38, 'female', 'paris')
 user1.greet_user()
 user1.describe_user()
+user1.increment_login_attempts()
+user1.increment_login_attempts()
+user1.increment_login_attempts()
+print(f'This user attempted to login {user1.login_attempts} times.')
+user1.reset_login_attempts()
+print(f'This user deleted all the attempts. Number of attempts: {user1.login_attempts}.')
+
 
 print()
 
