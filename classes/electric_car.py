@@ -24,9 +24,14 @@ class Car:
 # a classe electriccar é filho da classe car
 class ElectricCar(Car):
     # representa aspectos de veicúlos elétricos apenas
-    def __init__(Self, make, model, year):
+    def __init__(self, make, model, year):
         # inicializa os atributos da mãe (class Car)
         super().__init__(make, model, year)
+        self.battery_size = 75
+    
+    def describe_battery(self):
+        print(f'This car has a {self.battery_size}-kWh battery.')
 
 my_tesla = ElectricCar('tesla', 'model x', 2019)
 print(my_tesla.describe_car())
+my_tesla.describe_battery()
