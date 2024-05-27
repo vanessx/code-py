@@ -9,7 +9,7 @@ class User:
     
     def describe_user(self):
         print(f'Your name is {self.first_name.title()} {self.last_name.title()}'
-              f'and you are {self.age} years old.')
+              f' and you are {self.age} years old.')
         print(f'Your gender is {self.gender} and you live in {self.location.title()}.')
 
     def greet_user(self):
@@ -21,9 +21,8 @@ class User:
     def reset_login_attempts(self):
         self.login_attempts = 0
 
-class Admin(User):
-    def __init__(self, first_name, last_name, age, gender, location):
-        super().__init__(first_name, last_name, age, gender, location)
+class Privileges:
+    def __init__(self):
         self.privileges = ['can add post', 'can delete post', 'can ban user']
     
     def show_privileges(self):
@@ -31,5 +30,11 @@ class Admin(User):
         for privilege in self.privileges:
             print(f'{privilege}')
 
+class Admin(User):
+    def __init__(self, first_name, last_name, age, gender, location):
+        super().__init__(first_name, last_name, age, gender, location)
+        self.privileges = Privileges()
+
 admin = Admin('léa', 'seydoux', 38, 'female', 'paris')
-admin.show_privileges()
+admin.describe_user()
+admin.privileges.show_privileges()
