@@ -17,20 +17,3 @@ class Restaurant:
     
     def increment_number_served(self, add):
         self.number_served += add
-
-restaurant = Restaurant('aero', 'seafood')
-print(f'{restaurant.name.title()}. {restaurant.cuisine}.')
-
-restaurant.set_number_served(12)
-restaurant.increment_number_served(5)
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
-
-
-north_restaurant = Restaurant('plate of luck', 'classique')
-north_restaurant.describe_restaurant()
-
-
-south_restaurant = Restaurant('fornier', 'française')
-south_restaurant.describe_restaurant()
-

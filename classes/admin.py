@@ -34,7 +34,3 @@ class Admin(User):
     def __init__(self, first_name, last_name, age, gender, location):
         super().__init__(first_name, last_name, age, gender, location)
         self.privileges = Privileges()
-
-admin = Admin('léa', 'seydoux', 38, 'female', 'paris')
-admin.describe_user()
-admin.privileges.show_privileges()
