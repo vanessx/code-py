@@ -12,3 +12,4 @@ while len(result) < 4:
         print(f'We pulled a {pulled_item}!')
         result.append(pulled_item)
 
+print(result)
