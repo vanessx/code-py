@@ -6,7 +6,6 @@ print(contents)
 # abrir um ficheiro que está em outra pasta (relative file path)
 """
 with open('foldername/filename.txt') as file_object:
-
 """
 
 # abrir um ficheiro que está em outra pasta (absolute file path)
@@ -14,5 +13,4 @@ with open('foldername/filename.txt') as file_object:
 """
 file_path = '/home/vanessx/other_files/text_files/filename.txt'
 with open(file_path) as file_object:
-
 """
