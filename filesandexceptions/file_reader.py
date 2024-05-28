@@ -1,11 +1,11 @@
-# abrir um ficheiro que está na mesma pasta
-with open('pi_digits.txt') as file_object:
+# abrir um ficheiro que está em outra pasta (relative file path)
+with open('text_files/pi_digits.txt') as file_object:
     contents = file_object.read()
 print(contents)
 
-# abrir um ficheiro que está em outra pasta (relative file path)
+# abrir um ficheiro que está na mesma pasta
 """
-with open('foldername/filename.txt') as file_object:
+with open('filename.txt') as file_object:
 """
 
 # abrir um ficheiro que está em outra pasta (absolute file path)
