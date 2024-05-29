@@ -1,4 +1,5 @@
 print('Press \033[031mq\033[m to quit.')
+
 while True:
     try:
         first_num = input('First number:\n')
