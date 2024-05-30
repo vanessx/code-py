@@ -1,9 +1,10 @@
-def read_files(filename):
-    with open(filename) as files:
-        contents = files.read()
-    print(contents)
-
 filenames = ['text_files/cats.txt', 'text_files/dogs.txt']
-# usamos o for porque não conseguimos abrir ficheiros dentro de uma lista
-for file in filenames:
-    read_files(file)
+
+for filename in filenames:
+    print(f"\nReading file: {filename}")
+    try:
+        with open(filename) as f:
+            contents = f.read()
+            print(contents)
+    except FileNotFoundError:
+        print("\033[031mSorry, I can't find the file.\033[m")

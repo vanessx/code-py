@@ -1,6 +1,0 @@
-{
-    "files.autoSave": "afterDelay",
-    "editor.renderLineHighlight": "gutter",
-    "editor.minimap.enabled": false,
-    "editor.rulers": [80, 120],
-}
