@@ -9,7 +9,7 @@ class User:
     
     def describe_user(self):
         print(f'Your name is {self.first_name.title()} {self.last_name.title()}'
-              f'and you are {self.age} years old.')
+              f' and you are {self.age} years old.')
         print(f'Your gender is {self.gender} and you live in {self.location.title()}.')
 
     def greet_user(self):
