@@ -2,7 +2,7 @@ import pygame
 
 
 class Ship:
-
+    # a class to manage the ship
     def __init__(self, ss_game):
         # start the ship and set its starting position
         self.screen = ss_game.screen
