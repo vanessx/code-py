@@ -10,6 +10,6 @@ while len(result) < 4:
     pulled_item = choice(rand)
     if pulled_item not in result:
         print(f'We pulled a {pulled_item}!')
-        result.append(pulled_item)
+        result.append(pulled_item) 
 
 print(result)
